@@ -17,8 +17,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# Build the React app
-RUN npm run build
+EXPOSE 3000
 
 # Specify the command to run when the container starts
 CMD ["npm", "start"]
